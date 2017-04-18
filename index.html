@@ -1,12 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<head>
+<meta charset="utf-8">
+<title>Gllacy-Глейси</title>
+<meta name="description" content="Магазин Глейси — онлайн и офлайн магазин по продаже мороженого собственного производства на развес">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<body>
+	<header class="mainHeader">
+  	<section class="topHeader">
+  		<section class="headerLogo">
+  				<img src="http://placehold.it/154x64" alt="Gllacy" width="154" height="64">
+  		</section>
+  			<ul class="mainNav">
+  				<li><a href="#">Каталог</a>
+  					<div name="nameItems">
+  						<ul>
+								<li><a href="#">Новинки</a></li> 
+  							<li><a href="#">Сливочное</a></li> 
+  							<li><a href="#">Щербеты</a></li> 
+  							<li><a href="#">Фруктовый лед</a></li> 
+  							<li><a href="#">Мелорин</a></li> 
+							</ul>
+  					</div>
+  				</li>
+  				<li><a href="#">Доставка и оплата</a></li>
+  				<li><a href="#">О компании</a></li>
+  			</ul>
+  			<section class="searchInputBasket">
+  				<form action="/echo" method="get">
+          	<label for="search">Поиск по сайту</label> 
+            	<input type="search" name="search">
+            <div class="buttons">
+              <input type="submit" value="Найти">
+            </div>
+          </form>
+          <form action="/echo" method="post">
+          	<label for="input">Вход на сайт</label> 
+            	<input type="input" name="input">
+            <div class="buttons">
+              <input type="submit" value="Войти">
+            </div>
+          </form>
+  				<p>Пусто</p>
+  			</section>
+  	</section>
+  		<section class="workContact">
+  			<p class="timeContact">С 10 до 20, ежедневно</p>
+  			<p class="telContact">8 812 450-25-25</p>
+  		</section>
+  	<p class="nameItems">Крем-брюле и пломбир<br>с малиновым джемом</p>
+  </header>
+  <!-- banners block -->
+  <section class="bannerBlocks">
+  	<section class="bannerAction">
+  		<h2>Малинка даром!</h2>
+  		<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+  	</section>
+  	<section class="bannerAction">
+  		<h2>Шоколадки даром!</h2>
+  		<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+  	</section>
+  </section>
+  <!-- HIT blocks -->
+  <section class="popularItems">
+  	<section class="catalogItem1">
+  		<b>310 Р/кг</b>
+  		<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+  	</section>
+  	<section class="catalogItem2">
+  		<b>310 Р/кг</b>
+  		<p>Сливочно-кофейное с кусочками шоколада</p>
+  	</section>
+  	<section class="catalogItem3">
+  		<b>310 Р/кг</b>
+  		<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+  	</section>
+  	<section class="catalogItem4">
+  		<b>310 Р/кг</b>
+  		<p>Сливочное крем-брюле с карамельной подливкой</p>
+  	</section>
+  </section>
+  <!-- SEO block -->
+  <article class="gllasyInformation">
+  	<p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+  	<section class="listProperty">
+  		<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+  		<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+  		<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+  		<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+  	</section>
+  </article>
+  <!-- news block -->
+  <section class="siteBlog">
+  	<p>Новое в нашем блоге</p>
+  	<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+  </section>
+  <!-- form block -->
+  <section class="sendForm">
+  	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+  	<form action="#" method="post">
+  		<input type="text" name="email" id="email">
+  		<input type="submit" value="Отправить">
+  	</form>
+  </section>
+  <!-- form adress -->
+  <section class="mapAdress">
+  	<figure class="gllasyMap">
+  		<img src="http://placehold.it/1200x430" alt="map" width="1200" height="430">
+  	</figure>
+  	<section class="gllasyAdress">
+  		<p>Адрес главного офиса и офлайн магазина:</p>
+  		<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+  		<p>Для заказов по телефону:</p>
+  		<b>8 812 450-25-25</b> 
+  		<p>(с 10 до 20 ежедневно)</p>
+  		<form action="https://gllacy.ru" method="post">
+         	<label for="input">Форма обратной связи</label> 
+           	<input type="text" name="formConnect">
+           <div class="buttons">
+             <input type="submit" value="Форма обратной связи">
+           </div>
+       </form>
+  	</section>
+  </section>
+  <!-- footer -->
+  <footer>
+  	<section class="socialContact">
+  		<a class="twiterBtn" href="#">Твитер</a>
+  		<a class="insagramBtn" href="#">Инстаграм</a>
+  		<a class="facebookBtn" href="#">Фэйсбук</a>
+  		<a class="vkBtn" href="#">Вконтакте</a>
+  	</section>	
+  	<section class="providerItems">
+  		<p>Для поставщиков</p>
+  		<a class="providerItems1" href="#">О производстве</a>
+  	</section>
+  	<section class="gllacyDocuments">
+  		<p>Наши документы</p>
+  		<a class="gllacyDocument1" href="#">Экологические стандарты</a>
+  	</section>
+  	<section class="feedbackAcademy">
+  		<a class="logoAcademy" href="https://htmlacademy.ru/">
+  			<img src="img/Лого.png" alt="logoAcademy" width="108" height="38">
+  		</a>
+  		<p>Сделано в HTML Academy © 2017</p>
+  	</section>	
+  </footer>
+</body>
 </html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Глейси - каталог товаров</title>
+<meta name="description" content="Магазин Глейси — онлайн и офлайн магазин по продаже мороженого собственного производства на развес">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<header class="catalogHeader">
+  	<section class="topHeader">
+  		<section class="headerLogo">
+  				<img src="img/Logo.png" alt="Gllacy" width="154" height="64">
+  		</section>
+  			<ul class="catalogNav">
+  				<li><a href="#">Каталог</a></li>
+  				<li><a href="#">Доставка и оплата</a></li>
+  				<li><a href="#">О компании</a></li>
+  			</ul>
+  			<section class="searchInputBasket">
+  				<form action="/echo" method="get">
+          	<label for="search">Поиск по сайту</label> 
+            	<input type="search" name="search">
+            <div class="buttons">
+              <input type="submit" value="Найти">
+            </div>
+          </form>
+          <form action="/echo" method="post">
+          	<label for="input">Вход на сайт</label> 
+            	<input type="input" name="input">
+            <div class="buttons">
+              <input type="submit" value="Войти">
+            </div>
+          </form>
+  				<section class="catalogBasket">
+  					<a href="#">2 товара</a>
+  				</section>
+  			</section>
+  	</section>
+  		<section class="workContact">
+  			<p class="timeContact">С 10 до 20, ежедневно</p>
+  			<p class="telContact">8 812 450-25-25</p>
+  		</section>
+  		<section class="catalogItems">
+  			<a class="mainPage" href="#">Главная</a>
+  			<a class="catalogPage" href="#">Каталог</a>
+  			<a class="catalogItem" href="#">Сливочное</a>
+  		</section>
+  		<h2 class="nameItems">Сливочное мороженое</h2>
+  </header>
+  	<!-- filters block -->
+  <section class="filtersBlocks">
+  	<div class="selectItems">
+  		<p>Сортировка:</p>
+  		<select name="sortSelect">
+      	<option value="по популяронсти">по популяронсти</option>
+        <option value="сначала не дорогие">сначала не дорогие</option>
+        <option value="сначала дорогие">сначала дорогие</option>
+        <option value="по жирности">по жирности</option>
+      </select>
+    </div>
+    <div class="selectPrice">
+      <p>Цена: 100 руб. – 500 руб.</p>
+      <input type="range" min="1" max="10">
+    </div>
+  	<div class="selectRichness">
+  	 	<p>Жирность</p>
+  	 	<label>
+      		<input type="radio" name="question-one" value="p">0%
+      	</label>
+      	<label>
+        	<input type="radio" name="question-one" value="b" checked>10%
+      	</label>
+      	<label>
+      		<input type="radio" name="question-one" value="p">до 30%
+      	</label>
+      	<label>
+      		<input type="radio" name="question-one" value="p">выше 30%
+      	</label>
+     </div>
+     <div>
+      	<p>Наполнители:</p>
+      	<input type="checkbox" name="chocolate" id="chocolateField" checked>
+      	<label for="chocolateField">шоколадные</label>
+      	<input type="checkbox" name="sugar" id="sugarField" checked>
+      	<label for="sugarField">сахарные присыпки</label>
+      	<input type="checkbox" name="fruit" id="fruitField">
+      	<label for="fruitField">фрукты</label>
+      	<input type="checkbox" name="subscribe" id="subscribe-field">
+      	<label for="subscribe-field">сиропы</label>
+      	<input type="checkbox" name="djem" id="djemField">
+      	<label for="djemField">джемы</label>
+     </div>
+     <input type="submit" value="Применить">
+  </section>
+  	<!-- Items blocks -->
+  <section class="catalogItems">
+  		
+  	<ul>
+				<li><b>310 Р/кг</b>
+  				<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></li>
+					<a href="#">Быстрый просмотр</a>
+  		
+  			<li><b>310 Р/кг</b>
+  				<p>Сливочно-кофейное с кусочками шоколада</p></li>
+					<a href="#">Быстрый просмотр</a>
+  		
+  			<li><b>310 Р/кг</b>
+  				<p>Сливочно-клубничное с присыпкой из белого шоколада</p></li>
+					<a href="#">Быстрый просмотр</a>
+  		
+  			<li><b>310 Р/кг</b>
+  				<p>Сливочное крем-брюле с карамельной подливкой</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>325 Р/кг</b>
+  				<p>Сливочное с брусничным джемом</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>410 Р/кг</b>
+  				<p>Сливочно-черничное с цельными ягодами черники</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>375 Р/кг</b>
+  				<p>Сливочно-лимонное с карамельной присыпкой</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>320 Р/кг</b>
+  				<p>Сливочное с шоколадной стружкой</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>440 Р/кг</b>
+  				<p>Сливочно-ванильное с кусочками шоколада</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>435 Р/кг</b>
+  				<p>Сливочноe с ментоловым сиропом</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>355 Р/кг</b>
+  				<p>Сливочное с кусочками черного шоколада</p></li>
+					<a href="#">Быстрый просмотр</a>
+  				
+  				<li><b>420 Р/кг</b>
+  				<p>Сливочное с мятным сиропом</p></li>
+					<a href="#">Быстрый просмотр</a>
+			</ul>
+  	</section>
+  	<section class="paginator">
+    	<a href="#1">1</a>
+    	<a href="#2">2</a>
+    	<a href="#3">3</a>
+    	<a href="#4">4</a>
+    	<a href="#5">5</a>
+    </section>
+  	
+  	<!-- footer -->
+  	<footer>
+  		<section class="socialContact">
+  			<a class="twiterBtn" href="#">Твитер</a>
+  			<a class="insagramBtn" href="#">Инстаграм</a>
+  			<a class="facebookBtn" href="#">Фэйсбук</a>
+  			<a class="vkBtn" href="#">Вконтакте</a>
+  		</section>	
+  		<section class="providerItems">
+  			<p>Для поставщиков</p>
+  			<a class="providerItems1" href="#">О производстве</a>
+  		</section>
+  		<section class="gllacyDocuments">
+  			<p>Наши документы</p>
+  			<a class="gllacyDocument1" href="#">Экологические стандарты</a>
+  		</section>
+  		<section class="feedbackAcademy">
+  			<a class="logoAcademy" href="https://htmlacademy.ru/">
+  				<img src="img/Лого.png" alt="logoAcademy" width="108" height="38">
+  			</a>
+  			<p>Сделано в HTML Academy © 2017</p>
+  		</section>	
+  	</footer>
+</body>
+</html>

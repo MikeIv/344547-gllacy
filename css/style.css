@@ -21,7 +21,7 @@ body {
 }
 
 .topHeader {
-	height: 65px;
+	min-height: 65px;
 	background-color: rgba(247,217,144,0.5);
 }
 
@@ -77,19 +77,34 @@ nav ul {
 	display: none;
 }
 
+.headerForm {
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 10px;
+	padding-top: 5px;
+	box-sizing: border-box;
+  background-color: rgba(255,255,255,0.20);
+}
+
+.headerForm img {
+	vertical-align: middle;
+	padding-left: 6px;
+	padding-right: 4px;
+}
+
 .headerSearch {
-	float: left;
-	margin: 5px;
+	width: 32px;
+  height: 32px;
 }
 
 .headerInput {
-	float: left;
-	margin: 5px;
+	width: 93px;
+  height: 32px;
 }
 
 .headerBasket {
-	float: right;
-	margin: 5px;
+	width: 118px;
+  height: 32px;
 }
 
 .headerTwo {
@@ -101,7 +116,7 @@ nav ul {
 }
 
 .workContact {
-	height: 65px;
+	min-height: 65px;
 	background-color: rgba(247,217,144,0.3);
 }
 
@@ -120,28 +135,28 @@ nav ul {
 
 .nameItems {
 	width: 1146px;
-	height: 450px;
+	min-height: 450px;
 	background-color: rgba(215,229,136,0.5);
 }
 
 .nameItems p {
 	font-size: 60px;
 	font-weight: 600;
-	margin-left: 242px;
-	margin-right: 242px;
+	margin-left: 240px;
+	margin-right: 240px;
 	padding-top: 240px;
 	box-sizing: border-box;
 	color: #FFFFFF;
 }
 
 .bannerBlocks {
-	height: 280px;
+	min-height: 280px;
 	background-color: rgba(139,182,240,0.30);
 }
 
 .bannerAction1 {
 	width: 560px;
-	height: 230px;
+	min-height: 230px;
 	float: left;
 	margin-top: 20px;
 	padding: 20px;
@@ -151,7 +166,7 @@ nav ul {
 
 .bannerAction2 {
 	width: 560px;
-	height: 230px;
+	min-height: 230px;
 	float: right;
 	margin-top: 20px;
 	padding: 20px;
@@ -160,7 +175,7 @@ nav ul {
 }
 
 .popularItems {
-	height: 365px;
+	min-height: 365px;
 	background-color: rgba(118,218,244,0.50) ;
 }
 
@@ -178,7 +193,7 @@ nav ul {
 }
 
 .gllasyInformation {
-	height: 350px;
+	min-height: 350px;
 	padding-top: 20px;
 	box-sizing: border-box;
 	background-color: rgba(112,200,249,0.30);
@@ -197,7 +212,7 @@ nav ul {
 
 .propertyLeft {
 	width: 560px;
-	height: 200px;
+	min-height: 200px;
 	float: left;
 	padding-right: 10px;
 	padding-left: 70px;
@@ -206,7 +221,7 @@ nav ul {
 
 .propertyRight {
 	width: 560px;
-	height: 200px;
+	min-height: 200px;
 	float: right;
 	padding-right: 10px;
 	padding-left: 70px;
@@ -215,14 +230,14 @@ nav ul {
 
 .bottomBlock {
 	width: 1146px;
-	height: 280px;
+	min-height: 280px;
 	float: left;
 	background-color: rgba(208,153,244,0.50);
 }
 
 .siteBlog {
 	width: 560px;
-	height: 222px;
+	min-height: 222px;
 	float: left;
 	margin-top: 20px;
 	box-sizing: border-box;
@@ -239,7 +254,7 @@ nav ul {
 
 .sendForm {
 	width: 560px;
-	height: 222px;
+	min-height: 222px;
 	float: right;
 	margin-top: 20px;
 	box-sizing: border-box;
@@ -249,14 +264,14 @@ nav ul {
 
 .mapAdress {
 	width: 1146px;
-	height: 430px;
+	min-height: 430px;
 	float: left;
 	background-image: url(../img/Map.jpg);
 }
 
 .gllasyAdress {
 	width: 304px;
-	height: 306px;
+	min-height: 306px;
 	float: right;
 	margin-top: 65px;
 	margin-right: 27px;

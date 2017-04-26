@@ -13,14 +13,14 @@
 </head>
 
 <body>
-	<header class="mainHeader">
+	<header class="mainHeader container clearfix">
   	<section class="topHeader">
   		<section class="headerLogo">
   				<img src="img/Logo.png" alt="Gllacy" width="154" height="64">
   		</section>
-  			<nav>
+  			<nav >
   				<ul class="mainNav">
-  					<li><a href="#">Каталог</a>
+  					<li><a href="catalog.html">Каталог</a>
   						<div class="hoverItems" name="nameItems">
   							<ul>
 									<li><a href="#">Новинки</a></li> 
@@ -36,91 +36,98 @@
   				</ul>
   			</nav>
   			<section class="searchInputBasket">
-  				<form action="/echo" method="get">
-          	<label for="search">Поиск по сайту</label> 
+  				<form class="headerSearch headerForm" action="/echo" method="get">
+          	<label for="search"><img src="img/Лупа.png" alt="поиск"></label>
             	<input type="search" name="search">
             <div class="buttons">
               <input type="submit" value="Найти">
             </div>
           </form>
-          <form action="/echo" method="post">
-          	<label for="input">Вход на сайт</label> 
+          <form class="headerInput headerForm" action="/echo" method="post">
+          	<label for="input"><img src="img/Вход.png" alt="вход">Вход</label> 
             	<input type="input" name="input">
             <div class="buttons">
               <input type="submit" value="Войти">
             </div>
           </form>
-  				<p>Пусто</p>
+  				<a href="#" class="headerBasket headerForm"><img src="img/Корзина.png">Пусто</a>
   			</section>
   	</section>
   		<section class="workContact">
-  			<p class="timeContact">С 10 до 20, ежедневно</p>
-  			<p class="telContact">8 812 450-25-25</p>
+  			<div class="timeContact">
+  				<span>С 10 до 20, ежедневно</span><br>
+  				<span>8 812 450-25-25</span>
+  			</div>
+  			<div class="telContact"><p></p></div>
   		</section>
-  	<p class="nameItems">Крем-брюле и пломбир<br>с малиновым джемом</p>
+  	<div class="nameItems">
+  		<p>Крем-брюле и пломбир<br>с малиновым джемом</p>
+  	</div>
   </header>
+  <div class="mainContainer container">
   <!-- banners block -->
   <section class="bannerBlocks">
-  	<section class="bannerAction">
+  	<section class="bannerAction1">
   		<h2 class="headerTwo">Малинка даром!</h2>
   		<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
   	</section>
-  	<section class="bannerAction">
+  	<section class="bannerAction2">
   		<h2 class="headerTwo">Шоколадки даром!</h2>
   		<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
   	</section>
   </section>
   <!-- HIT blocks -->
   <section class="popularItems">
-  	<section class="catalogItem1">
+  	<section class="catalogItem1 block">
   	<img src="img/iceItem1.jpg" alt="Gllacy" width="267" height="267">
   		<b>310 Р/кг</b>
   		<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
   	</section>
-  	<section class="catalogItem2">
+  	<section class="catalogItem2 block">
   	<img src="img/iceItem2.jpg" alt="Gllacy" width="267" height="267">
-  		<b>310 Р/кг</b>
+  		<b>380 Р/кг</b>
   		<p>Сливочно-кофейное с кусочками шоколада</p>
   	</section>
-  	<section class="catalogItem3">
+  	<section class="catalogItem3 block">
   	<img src="img/iceItem3.jpg" alt="Gllacy" width="267" height="267">
-  		<b>310 Р/кг</b>
+  		<b>355 Р/кг</b>
   		<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
   	</section>
-  	<section class="catalogItem4">
+  	<section class="catalogItem4 block">
   	<img src="img/iceItem4.jpg" alt="Gllacy" width="267" height="267">
-  		<b>310 Р/кг</b>
+  		<b>415 Р/кг</b>
   		<p>Сливочное крем-брюле с карамельной подливкой</p>
   	</section>
   </section>
   <!-- SEO block -->
-  <article class="gllasyInformation">
-  	<p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-  	<section class="listProperty">
+  <section class="gllasyInformation">
+  	<p class="mainInformaition">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+  	<section class="listProperty propertyLeft">
   		<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
   		<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+		</section>
+  	<section class="listProperty propertyRight">
   		<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
   		<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
   	</section>
-  </article>
-  <!-- news block -->
-  <section class="siteBlog">
-  	<p>Новое в нашем блоге</p>
-  	<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
   </section>
-  <!-- form block -->
-  <section class="sendForm">
-  	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-  	<form action="#" method="post">
-  		<input type="text" name="email" id="email">
-  		<input type="submit" value="Отправить">
-  	</form>
+  <!-- news block -->
+  <section class="bottomBlock">
+  	<section class="siteBlog">
+  		<p>Новое в нашем блоге</p>
+  		<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+  	</section>
+  	<!-- form block -->
+  	<section class="sendForm">
+  		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+  		<form action="#" method="post">
+  			<input type="text" name="email" id="email">
+  			<input type="submit" value="Отправить">
+  		</form>
+  	</section>
   </section>
   <!-- form adress -->
-  <section class="mapAdress">
-  	<figure class="gllasyMap">
-  		<img src="img/Map.jpg" alt="map" width="1200" height="430">
-  	</figure>
+  <section class="mapAdress clearfix">
   	<section class="gllasyAdress">
   		<p>Адрес главного офиса и офлайн магазина:</p>
   		<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -136,6 +143,7 @@
        </form>
   	</section>
   </section>
+  
   <!-- footer -->
   <footer>
   	<section class="socialContact">
@@ -159,5 +167,6 @@
   		<p>Сделано в HTML Academy © 2017</p>
   	</section>	
   </footer>
+  </div>
 </body>
 </html>

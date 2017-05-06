@@ -37,22 +37,50 @@
   				</ul>
   			</nav>
   			<section class="searchInputBasket">
-  				<form class="headerSearch headerForm" action="/echo" method="get">
-          	<label for="search"><img src="img/Лупа.png" alt="поиск"></label>
-            	<input type="search" name="search">
-            <div class="buttons">
-              <input type="submit" value="Найти">
-            </div>
-          </form>
-          <form class="headerInput headerForm" action="/echo" method="post">
-          	<label for="input"><img src="img/Вход.png" alt="вход">Вход</label> 
-            	<input type="input" name="input">
-            <div class="buttons">
-              <input type="submit" value="Войти">
-            </div>
-          </form>
-  				<a href="#" class="headerBasket headerForm"><img src="img/Корзина.png">Пусто</a>
+  				<div class="headerSearch headerForm">
+          	<a href="#"></a>
+          	<div class="headerSearchform">
+          		<form action="#" method="get">
+  						<input type="text" name="search" placeholder="Что ищем?">
+							</form>
+         		</div>
+          </div>
+          <div class="headerInput headerForm">
+          	<a href="#"><img src="img/Вход.png">Вход</a>
+          	<div class="headerInputform">
+          		<form action="#" method="get">
+  						<input type="email" name="email" placeholder="Электронная почта">
+  						<input type="text" name="login" placeholder="Пароль">
+  						<input type="submit" value="Войти">
+  						<div class="inputformText">
+  							<a href="#">Забыли пароль?</a>
+  							<a href="#">Новая регистрация</a>
+  						</div>
+							</form>
+         		</div>
+          </div>
+  				<div class="headerBasket headerForm">
+  					<a href="#"><img src="img/Корзина.png">Пусто</a>
+  					<div class="headerBasketForm">
+  					<table >
+            	<tr>
+            	    <td>Пломбир с апельсиновым джемом</td>
+            	    <td>1,5 кг х 200 руб.</td>
+            	    <td>300 руб.</td>
+            	</tr>
+            	<tr>
+            	    <td>Клубничный пломбир с присыпкой 
+из белого шоколада</td>
+            	    <td>1,5 кг х 300 руб.</td>
+            	    <td>450 руб.</td>
+            	</tr>
+        		</table>
+        		<p>Итого: 750руб.</p>
+  						<input type="submit" value="Оформить заказ">
+						</div>
+  				</div>
   			</section>
+  				
   	</section>
   		<section class="workContact">
   			<div class="timetelContact">
@@ -61,6 +89,7 @@
   			</div>
   		</section>
   </header>
+  
   
   <div class="sliderFrames clearfix">
   	<div class="nameItems">
@@ -90,28 +119,36 @@
   <!-- HIT blocks -->
   <section class="popularItems">
   	<section class="catalogItem1 block">
+  		<a href="#">
   		<p class="imageItem"><img src="img/iceItem1.jpg" alt="Gllacy" width="267" height="267"></p>
-  		<p class="hitItems"><img src="img/hit.png" width="61" height="61"></p>
-  		<b><span>310 &#8381</span>/кг</b>
+  		<b><span>310&#8381</span>/кг</b>
   		<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+  		</a>
+  		<a class="btnItems" href="#">Быстрый просмотр</a>
   	</section>
   	<section class="catalogItem2 block">
-  	<p class="imageItem"><img src="img/iceItem2.jpg" alt="Gllacy" width="267" height="267"></p>
-  		<p class="hitItems"><img src="img/hit.png" width="61" height="61"></p>
-  		<b><span>380 &#8381</span>/кг</b>
+  		<a href="#">
+  		<p class="imageItem"><img src="img/iceItem2.jpg" alt="Gllacy" width="267" height="267"></p>
+  		<b><span>380&#8381</span>/кг</b>
   		<p>Сливочно-кофейное с кусочками шоколада</p>
+  		</a>
+  		<a class="btnItems" href="#">Быстрый просмотр</a>
   	</section>
   	<section class="catalogItem3 block">
-  	<p class="imageItem"><img src="img/iceItem3.jpg" alt="Gllacy" width="267" height="267"></p>
-  		<p class="hitItems"><img src="img/hit.png" width="61" height="61"></p>
-  		<b><span>355 &#8381</span>/кг</b>
+  		<a href="#">
+  		<p class="imageItem"><img src="img/iceItem3.jpg" alt="Gllacy" width="267" height="267"></p>
+  		<b><span>355&#8381</span>/кг</b>
   		<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+  		</a>
+  		<a class="btnItems" href="#">Быстрый просмотр</a>
   	</section>
   	<section class="catalogItem4 block">
-  	<p class="imageItem"><img src="img/iceItem4.jpg" alt="Gllacy" width="267" height="267"></p>
-  		<p class="hitItems"><img src="img/hit.png" width="61" height="61"></p>
-  		<b><span>415 &#8381</span>/кг</b>
+  		<a href="#">
+  		<p class="imageItem"><img src="img/iceItem4.jpg" alt="Gllacy" width="267" height="267"></p>
+  		<b><span>415&#8381</span>/кг</b>
   		<p>Сливочное крем-брюле с карамельной подливкой</p>
+  		</a>
+  		<a class="btnItems" href="#">Быстрый просмотр</a>
   	</section>
   </section>
   <!-- SEO block -->
@@ -154,7 +191,12 @@
   			<p>(с 10 до 20 ежедневно)</p>
   		</div>
   		<form action="https://gllacy.ru" method="post">
-         <input type="submit" value="Форма обратной связи">
+        <input type="submit" value="Форма обратной связи">
+        <div class="feedBackform">
+        	<form action="#" method="get">
+  				<input type="text" name="feedback" placeholder="Как Вас зовут?">
+				</form>
+				</div>
        </form>
   	</section>
   </section>
@@ -168,8 +210,8 @@
   		<a class="socialBtn vkBtn" href="#">Вконтакте</a>
   	</section>	
   	<section class="providerItems">
-  		<p>Для поставщиков</p>
-  		<a class="providerItem" href="#">О производстве</a>
+  		<p><a class="providerItem" href="#">Для поставщиков</a></p>
+  		<p><a class="providerItem" href="#">О производстве</a></p>
   	</section>
   	<section class="gllacyDocuments">
   		<p><a class="providerItem" href="#">Наши документы</a></p>
